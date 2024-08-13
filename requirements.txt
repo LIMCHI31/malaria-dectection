@@ -3,6 +3,6 @@ pandas
 Pillow
 scipy
 seaborn
-sklearn
+scikit-learn
 streamlit
 tensorflow
