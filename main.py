@@ -17,19 +17,16 @@ button = st.button('Predict')
 
 if button:
 
-    # st.write(load_image)
-    if len(load_image)==0:
-        st.write('No image was selected')
-    else:
-        pic = Image.open(load_image)
-        pic = pic.resize((256, 256))
-        pic_array = np.array(pic)
-        pic_arrays = np.expand_dims(pic_array, 0)
-        pic_array = pic_array.reshape((1, 256, 256, 3))
-
-
-        prediction = class_names[np.argmax(model.predict(pic_arrays))]
-
-        st.write(f'The image was predicted to be {prediction}')
+  
+    pic = Image.open(load_image)
+    pic = pic.resize((256, 256))
+    pic_array = np.array(pic)
+    pic_arrays = np.expand_dims(pic_array, 0)
+    pic_array = pic_array.reshape((1, 256, 256, 3))
+    
+    
+    prediction = class_names[np.argmax(model.predict(pic_arrays))]
+    
+    st.write(f'The image was predicted to be {prediction}')
     # except:
         
