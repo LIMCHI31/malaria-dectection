@@ -20,7 +20,7 @@ if button:
     # st.write(load_image)
     if len(load_image)==0:
         st.write('No image was selected')
-    else
+    else:
         pic = Image.open(load_image)
         pic = pic.resize((256, 256))
         pic_array = np.array(pic)
