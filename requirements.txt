@@ -1,0 +1,9 @@
+keras==2.14.0
+pandas
+Pillow
+scikit-learn
+scipy
+seaborn
+sklearn
+streamlit
+tensorflow
